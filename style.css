@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://images.pexels.com/photos/15197583/pexels-photo-15197583.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+/* nav bar css design */
+.nav{
+    height: 80px;
+    position: sticky;
+    background: transparent;
+    top: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+nav .manu-bar{
+    display: flex;
+    list-style: none;
+    
+}
+nav .manu-bar a{
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-size: 500;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 15px;
+
+}
+nav .manu-bar a:hover{
+    background: white;
+    color: black;
+    border: 2px solid green;
+}
+nav.nav-bar{
+    display: none;
+    padding: 10px;
+    background: transparent;
+    border: none;
+
+    
+}
+.nav-bar .bar{
+    background: white;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    color: black;
+    z-index: 999;
+    display: block;
+
+}
+@media (max-width:880px) {
+    nav .manu-bar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        padding: 5rem 1.5rem;    
+    
+
+}
+    
+}
